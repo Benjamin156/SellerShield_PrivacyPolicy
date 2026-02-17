@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>SellerShield Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .privDoc { max-width: 820px; margin: 28px auto; padding: 0 16px; }
+    .privDoc h1 { font-size: 24px; margin: 0 0 6px; }
+    .privDoc h2 { font-size: 16px; margin: 24px 0 8px; padding-bottom: 6px; border-bottom: 1px solid rgba(255,255,255,0.12); }
+    .privDoc p, .privDoc li { font-size: 13px; color: rgba(255,255,255,0.75); line-height: 1.75; }
+    .privDoc ul { padding-left: 20px; margin: 8px 0; }
+    .privDoc li { margin-bottom: 5px; }
+    .privDoc .meta { font-size: 12px; color: rgba(255,255,255,0.45); margin-bottom: 20px; }
+    .privDoc strong { color: rgba(255,255,255,0.92); }
+    @media print {
+      body { background: #fff !important; color: #000 !important; }
+      .privDoc p, .privDoc li { color: #333 !important; }
+      .privDoc h1, .privDoc h2, .privDoc strong { color: #000 !important; }
+      .noPrint { display: none !important; }
+    }
+  </style>
+</head>
+<body class="page">
+<div class="privDoc">
+  <div class="topbar noPrint" style="margin-bottom:16px;">
+    <div class="brand">
+      <img class="brandLogo" src="SellerShield_Logo.png" alt="SellerShield" />
+      <div class="brandText">
+        <div class="brandName">SellerShield</div>
+        <div class="brandTag">Privacy Policy</div>
+      </div>
+    </div>
+    <div class="topActions">
+      <button class="btn" onclick="window.print()">Print / Save PDF</button>
+      <button class="btn" onclick="window.close()">Close</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h1>SellerShield Privacy Policy</h1>
+    <div class="meta">
+      Effective date: 1 January 2025 &nbsp;·&nbsp; Version: 2.0.0 &nbsp;·&nbsp;
+      Extension: SellerShield (Takealot Seller Portal Guard)
+    </div>
+
+    <h2>1. Introduction &amp; Scope</h2>
+    <p>SellerShield ("the Extension", "we", "us") is a browser extension designed exclusively for use by
+    authorised administrators and employees of businesses operating on the Takealot Seller Portal
+    (<em>sellers.takealot.com</em>). This Privacy Policy describes what data the Extension collects,
+    how it is processed, where it is stored, how long it is retained, and your rights as a data subject.</p>
+    <p>By installing and configuring the Extension, the administrator agrees to the data practices
+    described in this Policy and accepts responsibility for deploying the Extension in a manner that
+    complies with applicable data protection laws, employment legislation, and workplace policies
+    in their jurisdiction. Employees are additionally required to accept an explicit in-browser consent
+    screen before any monitoring or blocking is enabled.</p>
+
+    <h2>2. Data Controller</h2>
+    <p>The <strong>data controller</strong> is the business entity or individual administrator who installs
+    and configures the Extension. SellerShield is a self-contained local tool — no data is transmitted to
+    3rd party services, any third-party analytics service, advertising network, or remote server of any kind.</p>
+    <p><strong>All data remains entirely within the browser instance(s) where the Extension is installed</strong>,
+    stored using Chrome's built-in storage APIs (chrome.storage.sync, chrome.storage.local, chrome.storage.session).
+    chrome.storage.sync data may be synchronised across the administrator's Chrome browser instances by Google
+    Chrome Sync (subject to the administrator's own Google account settings).</p>
+
+    <h2>3. Categories of Personal Data Collected</h2>
+    <p>The Extension may collect the following categories of data, depending on which features the administrator has enabled:</p>
+    <ul>
+      <li><strong>Employee identifiers.</strong> An employee ID string entered voluntarily on the consent screen. This is a reference code used to associate audit events and greetings with a specific employee.</li>
+      <li><strong>Employee profile data.</strong> Full name, job role/department, and an optional greeting note. This data is entered by the administrator and stored in chrome.storage.sync.</li>
+      <li><strong>Consent status and timestamp.</strong> A boolean flag and Unix timestamp recording that the employee accepted the monitoring consent notice, and when they did so.</li>
+      <li><strong>Portal navigation events.</strong> The full URLs navigated to within the sellers.takealot.com domain, logged when audit logging is enabled.</li>
+      <li><strong>Blocked access attempts.</strong> The URL and configured block reason logged when an employee attempts to access a restricted portal page.</li>
+      <li><strong>Heartbeat events.</strong> Periodic activity pings (every 2 minutes) recording that the employee's portal tab is open and active, when heartbeat monitoring is enabled.</li>
+      <li><strong>Extension offline / availability gaps.</strong> When the extension's background alarm detects a gap of more than 3 minutes in its 1-minute ping cycle, an event is logged recording the estimated duration of inactivity. This may indicate the extension was disabled, the browser was closed, or the device went to sleep.</li>
+      <li><strong>Portal usage heatmap data.</strong> The time spent (in milliseconds) on each distinct portal URL path, aggregated per path. No page content, form data, or text is captured — only the path and duration.</li>
+      <li><strong>Admin actions.</strong> Policy saves, preview activations, element picker usage, recovery code regeneration, login events, and employee profile updates are logged to the audit trail.</li>
+      <li><strong>System events.</strong> Extension installation, update, and browser startup events are logged.</li>
+      <li><strong>Greeting delivery records.</strong> A log entry recording that a daily greeting was shown to an employee, including their employee ID and name, and the date.</li>
+    </ul>
+
+    <h2>4. Data We Explicitly Do NOT Collect</h2>
+    <p>SellerShield is designed with minimal collection as a core principle. The following data is <strong>never</strong> collected under any circumstances:</p>
+    <ul>
+      <li>Keystrokes, typing patterns, or keyboard input of any kind</li>
+      <li>Passwords, authentication tokens, or session credentials</li>
+      <li>Screenshots, screen recordings, or visual captures of any kind</li>
+      <li>Webcam, microphone, or any hardware sensor data</li>
+      <li>Browser history, bookmarks, or data from websites other than sellers.takealot.com</li>
+      <li>Cookies, local storage, or IndexedDB data from the portal website</li>
+      <li>Form field values, search queries, or text entered into the portal</li>
+      <li>Financial transactions, payment card data, or banking information</li>
+      <li>Personal communications, emails, messages, or files</li>
+      <li>IP addresses or network configuration data</li>
+      <li>Device hardware identifiers</li>
+    </ul>
+
+    <h2>5. Purpose &amp; Legal Basis for Processing</h2>
+    <p>All data collected by the Extension is processed for one or more of the following purposes:</p>
+    <ul>
+      <li><strong>Access control (Legitimate interest / Contract).</strong> Blocking employees from portal sections the business owner has designated as restricted, and enforcing role-based access policies.</li>
+      <li><strong>Sensitive data protection (Legitimate interest).</strong> Preventing employees from viewing, copying, or printing commercially sensitive financial data they are not authorised to access.</li>
+      <li><strong>Audit &amp; workplace compliance (Legitimate interest / Legal obligation).</strong> Maintaining records of access attempts and admin actions for internal governance, compliance, or HR investigations.</li>
+      <li><strong>Active user monitoring (Legitimate interest).</strong> Determining which employees are currently using the portal, for staffing and security awareness purposes.</li>
+      <li><strong>Usage analytics (Legitimate interest).</strong> Understanding which portal sections employees use most frequently, to optimise training and workflow design.</li>
+      <li><strong>Personalised experience (Consent).</strong> Delivering daily personalised greetings to improve employee experience and confirm the extension is active.</li>
+      <li><strong>Security integrity (Legitimate interest).</strong> Detecting when the extension may have been disabled or circumvented, allowing the administrator to take corrective action.</li>
+    </ul>
+    <p>The primary legal basis for processing is <strong>consent</strong>, which is obtained through the explicit in-browser consent screen. Where processing continues beyond the initial consent (such as audit logging and heartbeat monitoring), it is additionally justified by the employer's <strong>legitimate interest</strong> in protecting commercially sensitive business data and ensuring appropriate use of business IT systems, balanced against employees' privacy rights.</p>
+
+    <h2>6. Data Storage, Retention &amp; Deletion</h2>
+    <p>All Extension data is stored locally in the browser:</p>
+    <ul>
+      <li><strong>chrome.storage.sync</strong> — Policy configuration, employee profiles, audit log, consent status, employee ID. Capacity: ~100KB. Synced by Google Chrome across the admin's signed-in browser instances.</li>
+      <li><strong>chrome.storage.local</strong> — Admin password hash (never the plaintext password), preview state, heatmap data, tutorial completion flag, greeting date records. Device-local only. Not synced remotely.</li>
+      <li><strong>chrome.storage.session</strong> — Transient session data (last blocked page details). Automatically cleared when the browser session ends.</li>
+    </ul>
+    <p><strong>Retention limits:</strong> The audit log is automatically capped at 500 entries; the oldest entries are removed when the limit is exceeded. Heatmap data is capped at 500 unique paths. No further automated deletion schedule is applied.</p>
+    <p>The administrator can permanently delete all audit log data, heatmap data, and employee profiles at any time from the Admin console. Consent data can be cleared by the employee (or admin) by uninstalling the extension or clearing browser storage.</p>
+    <p>Administrators are responsible for establishing a data retention schedule consistent with their obligations under applicable data protection laws and internal HR policies.</p>
+
+    <h2>7. Data Sharing &amp; International Transfers</h2>
+    <p>No personal data collected by the Extension is transmitted to any external server, third-party service, analytics provider, or cloud platform operated by the Extension developer.</p>
+    <p>The only data movement that occurs is Google Chrome's own Sync infrastructure synchronising chrome.storage.sync data across the administrator's personal Chrome profile on trusted devices. This sync is subject to Google's own Privacy Policy and Terms of Service and is entirely controlled by the administrator's Google account settings. Administrators should review and configure Chrome Sync settings to align with their data protection obligations.</p>
+
+    <h2>8. Employee Rights</h2>
+    <p>Under applicable data protection legislation (including but not limited to the EU General Data Protection Regulation (GDPR), the UK GDPR, South Africa's Protection of Personal Information Act (POPIA), and equivalent regional laws), employees whose data is processed have the following rights:</p>
+    <ul>
+      <li><strong>Right of access.</strong> Employees may request a copy of all data held about them. The administrator can export the audit log as JSON or CSV and filter by employee ID to produce a subject access response.</li>
+      <li><strong>Right to rectification.</strong> Employees may request correction of inaccurate profile data. The administrator can update employee profiles in the Employees tab.</li>
+      <li><strong>Right to erasure ("right to be forgotten").</strong> Employees may request deletion of their data. The administrator can remove their profile from the Employees tab, clear the audit log, and clear the heatmap. Note that clearing the full audit log will delete all employees' data, not just the requesting employee's data — the administrator should export and redact as appropriate.</li>
+      <li><strong>Right to object.</strong> Employees may object to processing by declining the in-browser consent screen. If consent is not given, no monitoring, audit logging, or heartbeat data is collected. The employee will be unable to use the portal while consent is declined (the consent screen will be shown on each visit).</li>
+      <li><strong>Right to data portability.</strong> Audit log data and heatmap data can be exported as JSON or CSV by the administrator.</li>
+      <li><strong>Right not to be subject to solely automated decision-making.</strong> No automated decisions with legal or significant effects are made based on data collected by the Extension.</li>
+    </ul>
+    <p>To exercise any of these rights, employees should contact the administrator responsible for the Extension deployment within their organisation. If an employee believes their data protection rights are being violated and cannot resolve the matter with the administrator, they may lodge a complaint with the relevant data protection authority in their jurisdiction.</p>
+
+    <h2>9. Security Measures</h2>
+    <p>The Extension implements the following technical security measures:</p>
+    <ul>
+      <li><strong>Password hashing.</strong> The admin password is stored as a PBKDF2-SHA-256 hash with 150,000 iterations and a unique 16-byte random salt. The plaintext password is never written to storage.</li>
+      <li><strong>Recovery code security.</strong> Recovery codes are hashed using SHA-256 combined with a separate random salt. Each code can only be used once; used codes are deleted immediately.</li>
+      <li><strong>No credential sync.</strong> Admin authentication data is stored in chrome.storage.local only, which is not synced remotely.</li>
+      <li><strong>Isolated execution.</strong> The Extension content script runs in a sandboxed context that cannot access the portal page's JavaScript environment, cookies, or session tokens.</li>
+      <li><strong>Clipboard protection.</strong> When enabled, copying blurred content substitutes a protection notice for the actual data, preventing clipboard exfiltration.</li>
+      <li><strong>Print protection.</strong> When enabled, blurred content is temporarily replaced before the print dialog to prevent physical exfiltration.</li>
+      <li><strong>Minimal permissions.</strong> The Extension only requests permissions necessary for its stated function (storage, tabs, webNavigation, declarativeNetRequest, alarms, management).</li>
+    </ul>
+    <p>No security measure is infallible. Administrators should combine SellerShield with appropriate organisational security measures, including employee training, device management policies, and access control reviews.</p>
+
+    <h2>10. Employer Obligations &amp; Responsible Use</h2>
+    <p>Administrators who deploy SellerShield in a workplace context must ensure:</p>
+    <ul>
+      <li>Employees are clearly informed that monitoring is in place, either through the in-app consent screen, written employment contracts, or a separate written monitoring notice, as required by applicable law.</li>
+      <li>The scope and purposes of monitoring are proportionate to the legitimate business objective and do not constitute unreasonable surveillance.</li>
+      <li>Data collected is not used for purposes beyond those disclosed to employees (e.g., not used for automated performance evaluations without additional notice).</li>
+      <li>Data retention periods are defined and communicated to employees, and data is deleted in accordance with those periods.</li>
+      <li>Where required by law (e.g., under GDPR or POPIA), a Data Processing Impact Assessment (DPIA) is conducted before deployment.</li>
+      <li>Employee representatives or unions are consulted where required by local employment law before introducing electronic monitoring.</li>
+    </ul>
+
+    <h2>11. Children</h2>
+    <p>The Extension is intended solely for business workplace use by adults. It must not be deployed to monitor individuals under the age of 18.</p>
+
+    <h2>12. Changes to This Policy</h2>
+    <p>This Privacy Policy may be updated when the Extension is updated. SellerShield Reserves the right to update its services, policies and information associated at any given time. The effective date and version number at the top of this Policy will reflect the most recent revision of SellerShield. Furthermore,  Administrators should review the Privacy Policy after each Extension update and, where material changes are made, notify affected employees accordingly as per your organizations employment policies.</p>
+
+    <h2>13. Contact</h2>
+    <p>Questions, data subject access requests, or complaints regarding this Privacy Policy or data collected by the Extension should be directed to the administrator who deployed the Extension within your organisation. SellerShield is an internal business tool -  there is no central support body, data protection officer, or supervisory authority associated with the SellerShield software itself.  SellerShield cannot be held liable for any damages, consequenes, financial loss or data loss. Moroever, SellerShield shall not be held liable for any direct or indirect consequences arising from the installation or use of the SellerShield Chrome/Web Extension. Use of the extension is entirely at the user’s own risk. This is a intrernal business tool, so usage is solely at the user's own risk. All rights are reserved, and policies, features, or terms may be modified at any time without notice! </p>
+
+    <div style="margin-top:28px;padding:16px;background:rgba(139,92,246,0.08);border:1px solid rgba(139,92,246,0.2);border-radius:14px;">
+      <p style="margin:0;font-size:12px;color:rgba(255,255,255,0.6);line-height:1.6;">
+        <strong style="color:rgba(255,255,255,0.85);">Summary:</strong> SellerShield is a local browser extension.
+        All data stays in your browser. No data is transmitted to any external server.
+        No keylogging. No screenshots. No passwords. Monitoring only begins after the employee explicitly consents.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer muted small noPrint">SellerShield • Privacy Policy • v2.0.0</div>
+</div>
+</body>
+</html>
